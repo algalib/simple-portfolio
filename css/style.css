@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,300i,400i,700,800');
+
+body
+{
+	margin:0px;
+	padding:0px;
+	font-family: 'Raleway', sans-serif;
+}
+#home
+{
+	background: url('../img/h6.jpg') no-repeat fixed center;
+	background-position: center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+}
+.menubar
+{
+	height: auto;
+	width: 100%;
+}
+.navbar-light
+{
+	background: rgba(13, 8, 246, 0.5);
+	border-bottom: none;
+	overflow: hidden;
+	transition: .1s;
+	-webkit-transition: .1s;
+	-moz-transition: .1s;
+}
+.navbar-light .navbar-nav li .nav-item
+{
+	color: #fff;
+	text-transform: uppercase;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover 
+{
+	color: #fff;
+}
+ul.cus-nav li
+{
+	list-style: none;
+	float: left;
+	padding-left: 20px;
+}
+ul.cus-nav li .nav-item
+{
+	text-decoration: none;
+	padding: 10px;
+	color: #fff;
+	position: relative;
+}
+ul.cus-nav li .nav-item:before
+{
+	border-right: 1px solid #fff;
+	border-left: 1px solid #fff;
+	transform: scale(1, 0);
+}
+ul.cus-nav li .nav-item:after
+{
+	border-bottom: 1px solid #fff;
+	border-top: 1px solid #fff;
+	transform: scale(0, 1);
+}
+ul.cus-nav li .nav-item:before, ul.cus-nav li .nav-item:after
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	transition: opacity 0.35s ease, transform 0.35s ease;
+}
+ul.cus-nav li .nav-item:hover:before, ul.cus-nav li .nav-item:hover:after
+{
+	transition: 0.35s;
+	transform: scale(1);
+}
+
+.home-text
+{
+	margin-top: 20%;
+	text-align: left;
+}
+.home-text h2
+{
+	color: #fff;
+	font-size: 40px;
+	text-transform: uppercase;
+	letter-spacing: 1rem;
+}
+.home-text p
+{
+	width: 50%;
+	color: #fff;
+	font-size: 18px;
+	line-height: 30px;
+}
+.home-text a
+{
+	background: transparent;
+	color: #fff;
+	padding: 10px 30px;
+	text-decoration: none;
+	text-transform: uppercase;
+	display: inline-block;
+	border: 1px solid #fff;
+	border-radius: 5px;
+	margin-top: 25px;
+	font-weight: bold;
+}
+.home-text a:hover
+{
+	color: #073AE5;
+	background: transparent;
+	transition: all .5s ease;
+}
+
+h2.heading
+{
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 1.9rem;
+	margin-bottom: 1.9rem;
+}
+/**Contact form**/
+
+#contact .formBox{
+	margin-top: 1rem;
+	padding: 1em;
+}
+#contact h1{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	margin-bottom: 50px !important;
+	text-transform: uppercase;
+	font-size: 48px;
+}
+#contact .inputbox{
+	position: relative;
+	box-sizing: border-box;
+	margin-bottom: 40px;
+}
+#contact .input{
+	position: relative;
+	width: 100%;
+	height: 50px;
+	background: transparent;
+	border: none;
+	outline: none;
+	font-size: 24px;
+	border-bottom: 2px solid rgba(0, 0, 0, .5);
+}
+#contact .inputText{
+	position: relative;
+	line-height: 30px;
+	font-size: 24px;
+	transition: 0.5s ease;
+	opacity: .5;
+}
+#contact .focus .inputText{
+	transform: translateY(-30px);
+	font-size: 18px;
+	opacity: 1;
+	color: #00bcd4;
+}
+#contact textarea{
+	height: 100px !important;
+}
+#contact a{
+	color: #222;
+	border-radius: 5px;
+	font-size: 24px;
+	text-decoration: none;
+	border: 1px solid #007BFF;
+	transition: .5s;
+}
+#contact a:hover
+{
+	color: #fff;
+}
+
+/**Our team**/
+
+.our-team{
+	padding: 30px 0 40px;
+	background: #fff;
+	text-align: center;
+	overflow: hidden;
+	position: relative;
+}
+.our-team .pic{
+	display: inline-block;
+	width: 130px;
+	height: 130px;
+	margin-bottom: 50px;
+	position: relative;
+	z-index: 1;
+}
+.our-team .pic:before{
+	content: "";
+	width: 100%;
+	height: 0;
+	border-radius: 50%;
+	background: #eb1768;
+	position: absolute;
+	bottom: 135%;
+	right: 0;
+	left: 0;
+	transform: scale(3);
+	transition: all 0.3s linear 0s;
+}
+
+.our-team:hover .pic:before {
+	content: "";
+	height: 100%;
+}
+.our-team .pic:after{
+	content: "";
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background: #ee4266;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+.our-team .pic img{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	transform: scale(1);
+	transition: all 0.9s ease 0s;
+
+}
+.our-team:hover .pic img{
+	box-shadow: 0 0 0 14px #f7f5ec;
+	transform: scale(0.7);
+}
+.our-team .team-content{
+	margin-bottom: 30px;
+}
+.our-team .title{
+	font-size: 22px;
+	font-weight: 700;
+	color: #4e5052;
+	letter-spacing: 1px;
+	text-transform: capitalize;
+	margin-bottom: 5px;
+}
+.our-team .post{
+	display: block;
+	font-size: 15px;
+	color: #4e5052;
+	text-transform: capitalize;
+}
+.our-team .social{
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	background: #eb1768;
+	position: absolute;
+	bottom: -100px;
+	left: 0;
+	transition: all 0.3s ease 0s;
+}
+.our-team:hover .social{
+	bottom: 0;
+}
+.our-team .social li{
+	display: inline-block;
+}
+.our-team .social li a{
+	display: block;
+	padding: 10px;
+	font-size: 17px;
+	color: #fff;
+	transition: all 0.3s ease 0s;
+}
+.our-team .social li a:hover{
+	color: #eb1768;
+	background: #f7f5ec;
+	text-decoration: none;
+}
+
+/**footer section**/
+#footer
+{
+	margin-top: 1.5rem;
+	background: #7F7972;
+}
+#footer .row
+{
+	padding: 1rem 2rem 3rem;
+	color: #fff;
+}
+#footer img
+{
+	height: 2rem;
+	margin: 1.5rem 0;
+}
+#footer strong{
+	font-size: 20px;
+	color: #222;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive css 
+@media (max-width: 640px) {
+	.home-text{
+		margin-top: 10%;
+	}
+	.home-text h2{
+		font-size: 20px;
+		letter-spacing: 3px;
+		line-height: 35px;
+	}
+	.navbar-light{
+		background: transparent;
+		height: 75px;
+		border-bottom: none;
+		overflow: visible;
+		transition: .3s;
+	}
+	.navbar-nav{
+		float: right;
+		margin: 11px 21px;
+		margin-right: 23%;
+		display: inherit;
+		width: 200px;
+		background: transparent;
+	}
+	.navbar-nav li{
+		float: left;
+		margin: 9px 11px;
+		display: inherit;
+		width: 100%;
+	}
+	.navbar-fixed-top .navbar-collapse{
+		height: 740px;
+		background: rgba(0, 0, 0, 0.9);
+	}
+	.navbar-fixed-top .navbar-collapse{
+		max-height: 100%;
+	}
+	.navbar-light .navbar-toggler:focus, .navbar-light .navbar-toggler:hover {
+		background: transparent;
+	}
+}
+
+*/
+
+
+
